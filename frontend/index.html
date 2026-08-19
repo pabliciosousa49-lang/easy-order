@@ -13,26 +13,20 @@
     <main>
         <section>
             <h2>Mesas</h2>
-
-            <button type="button">MESA 1</button>
-            <button type="button">MESA 2</button>
-            <button type="button">MESA 3</button>
-            <button type="button">MESA 4</button>
-            <button type="button">MESA 5</button>
-            <button type="button">MESA 6</button>
-            <button type="button">MESA 7</button>
-            <button type="button">MESA 8</button>
-            <button type="button">MESA 9</button>
-            <button type="button">MESA 10</button>
+            
+            <button type="button" id="mesa-1">MESA 1</button>
+            <button type="button" id="mesa-2">MESA 2</button>
+            
         </section>
         
 
          <section>
             <h2>Pedido da Mesa</h2>
-            
+            <p>Mesa Selecionada: <strong>Nenhuma</strong></p>
+
         <form>
             <label for="responsavel">Nome do responsável</label>
-            <input type="text" id="responsavel">
+            <input type="text" id="responsavel" name="responsavel">
 
             <label for="item">Nome do Produto</label>                   
             <input type="text" id="item" name="item">
@@ -62,6 +56,7 @@
     
         <label for="pagamento">Forma de pagamento</label>
         <select id="pagamento">
+            <option value="" disabled selected>Selecione a forma de pagamento</option>
             <option>Pix</option>
             <option>Cartão</option>
             <option>Dinheiro</option>
