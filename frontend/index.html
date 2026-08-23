@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/css/styles.css">
     <title>EasyOrder</title>
 </head>
 <body>
@@ -41,8 +42,10 @@
         </form>
 
         <h3>Itens do Pedido</h3>
+
+        <!-- <ul> cria uma lista não ordenada -->
         <ul>
-            <li>
+            <li> <!-- <li> cria um item da lista -->
                 Item 1 - Quantidade: 2 - Valor: R$ 20,00
                 <button type="button">Editar Item</button>
                 <button type="button">Remover Item</button>
@@ -56,7 +59,7 @@
     
         <label for="pagamento">Forma de pagamento</label>
         <select id="pagamento">
-            <option value="" disabled selected>Selecione a forma de pagamento</option>
+            <option value=""disabled selected>Selecione a forma de pagamento</option>
             <option>Pix</option>
             <option>Cartão</option>
             <option>Dinheiro</option>
