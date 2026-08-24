@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
     <title>EasyOrder</title>
 </head>
 <body>
@@ -15,15 +16,15 @@
         <section>
             <h2>Mesas</h2>
             
-            <button type="button" id="mesa-1">MESA 1</button>
-            <button type="button" id="mesa-2">MESA 2</button>
+            <button class="mesa-btn" id="mesa1">MESA 1</button>
+            <button class="mesa-btn" id="mesa2">MESA 2</button>
             
         </section>
         
 
          <section>
             <h2>Pedido da Mesa</h2>
-            <p>Mesa Selecionada: <strong>Nenhuma</strong></p>
+            <p>Mesa Selecionada: <strong id="mesa-selecionada">Nenhuma</strong></p>
 
         <form>
             <label for="responsavel">Nome do responsável</label>
