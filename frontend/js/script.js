@@ -1,10 +1,13 @@
-const mesa1 = document.querySelector("#mesa1");
+const botoesDeMesas = document.querySelectorAll(".mesa-btn"); 
 const mesaSelecionada = document.querySelector("#mesa-selecionada");
 
-mesa1.addEventListener("click", function () {
-    
-    console.log("Mesa 1 foi clicada");
-    mesaSelecionada.textContent = "MESA 1";
+botoesDeMesas.forEach(function(mesa) {
+    mesa.addEventListener("click", function () {
+
+        console.log("Mesa 1 foi clicada"); 
+
+        mesaSelecionada.textContent = mesa.textContent;
+    });
 });
 
 
